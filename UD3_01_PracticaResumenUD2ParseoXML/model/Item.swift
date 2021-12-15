@@ -10,7 +10,7 @@ import Foundation
 struct Item {
     var title: String
     var link: String
-    var description: String
+    var descripcion: String
     var category: String
     var pubDate: String
 }

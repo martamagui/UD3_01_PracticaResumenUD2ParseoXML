@@ -18,7 +18,9 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
     var descripcion = String()
     var category = String()
     var pubDate =  String()
+    var img = String()
     var parser: XMLParser = XMLParser()
+   
     
     let urlXML="https://www.muyinteresante.es/rss"
     
@@ -43,6 +45,7 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
             descripcion = String()
             category = String()
             pubDate = String()
+            img = String()
         }
     }
     
@@ -55,7 +58,7 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
                 titulo += caracter
             }else if nombreElemento == "link"{
                 link += caracter
-            }else if nombreElemento == "decription"{
+            }else if nombreElemento == "description"{
                 descripcion += caracter
             }else if nombreElemento == "category"{
                 category += caracter
@@ -68,7 +71,8 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item"
         {
-            let datosItem = Item(title: titulo, link: link, description: descripcion, category: category, pubDate: pubDate)
+            print(descripcion)
+            let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate)
             print(titulo)
             itemList.append(datosItem)
         }
@@ -91,7 +95,17 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //performSegue(withIdentifier: "irADetalle", sender: nil)
+        performSegue(withIdentifier: "irADetalle", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "irADetalle"
+        {
+            guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
+            let itemSeleccionado = itemList[celdaSeleccionada]
+            let vistaDetalle = segue.destination as! VCDetalle
+            print(link)
+            vistaDetalle.item = itemSeleccionado
+        }
     }
     
 }

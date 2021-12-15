@@ -53,6 +53,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Xf3-ud-gos" kind="show" identifier="irADetalle" id="7ii-OD-Mr7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,6 +89,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKA-eT-hbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-149.27536231884059" y="-228.34821428571428"/>
+        </scene>
+        <!--Detalle-->
+        <scene sceneID="mkY-Wa-Qkr">
+            <objects>
+                <viewController id="Xf3-ud-gos" customClass="VCDetalle" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u8v-Vs-lss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Noticia" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB5-KP-LSA">
+                                <rect key="frame" x="50" y="108" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-ia-nlk">
+                                <rect key="frame" x="50" y="188" width="314" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-6x-YZR">
+                                <rect key="frame" x="50" y="148" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="miv-UO-s9N"/>
+                                </constraints>
+                                <state key="normal" title="Categoría"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-d9-9XZ">
+                                <rect key="frame" x="50" y="259" width="314" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="OQ2-n9-MSj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-VQ-IO7" userLabel="leerMas">
+                                <rect key="frame" x="157" y="409" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wY6-7O-rO0"/>
+                                </constraints>
+                                <state key="normal" title="Leer más"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b9n-vI-s9q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="1FK-SO-IYk"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="jB5-KP-LSA" secondAttribute="trailing" constant="50" id="BzC-oN-yWR"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="3GO-d9-9XZ" secondAttribute="trailing" constant="50" id="Cp2-eO-bhz"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Lx5-ia-nlk" secondAttribute="trailing" constant="50" id="UIe-nx-EkR"/>
+                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="top" secondItem="fbY-6x-YZR" secondAttribute="bottom" constant="10" id="Vjp-wF-29w"/>
+                            <constraint firstItem="fbY-6x-YZR" firstAttribute="top" secondItem="jB5-KP-LSA" secondAttribute="bottom" constant="10" id="ado-Hf-v9P"/>
+                            <constraint firstItem="jB5-KP-LSA" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="arx-bH-SWP"/>
+                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="top" secondItem="Lx5-ia-nlk" secondAttribute="bottom" constant="50" id="dEd-Or-8IY"/>
+                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="eXh-0a-6uf"/>
+                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="top" secondItem="3GO-d9-9XZ" secondAttribute="bottom" constant="30" id="gpS-rC-Bcx"/>
+                            <constraint firstItem="fbY-6x-YZR" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="we3-jv-7nv"/>
+                            <constraint firstItem="jB5-KP-LSA" firstAttribute="top" secondItem="b9n-vI-s9q" secondAttribute="top" constant="20" id="xbO-8o-I36"/>
+                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="centerX" secondItem="b9n-vI-s9q" secondAttribute="centerX" id="zNG-mB-aba"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YBE-FB-JLu"/>
+                    <connections>
+                        <outlet property="btnCategoria" destination="fbY-6x-YZR" id="bd2-LS-wQt"/>
+                        <outlet property="btnLeerMas" destination="Ixq-VQ-IO7" id="W8J-J3-Zy1"/>
+                        <outlet property="lblDate" destination="Lx5-ia-nlk" id="9zp-6y-8VZ"/>
+                        <outlet property="lblDescription" destination="3GO-d9-9XZ" id="7oW-OR-F0g"/>
+                        <outlet property="lblTitulo" destination="jB5-KP-LSA" id="Idy-OL-ck1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9s-mD-i50" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447.826086956522" y="-228.34821428571428"/>
         </scene>
     </scenes>
     <resources>
