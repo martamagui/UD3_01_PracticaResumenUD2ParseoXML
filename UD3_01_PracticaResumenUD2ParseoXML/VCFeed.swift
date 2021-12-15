@@ -23,8 +23,12 @@ class VCFeed: UITableViewController,XMLParserDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        guard let url= URL(string: urlXML) else {return}
+        guard let parser = XMLParser(contentsOf: url) else { return}
+        parser.delegate = self
+        parser.parse()
+        
     }
     
    
