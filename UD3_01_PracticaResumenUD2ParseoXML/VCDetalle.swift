@@ -13,6 +13,7 @@ class VCDetalle: UIViewController {
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var btnLeerMas: UIButton!
     @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var ivNoticia: UIImageView!
     var item : Item?
     
     override func viewDidLoad() {
@@ -23,8 +24,11 @@ class VCDetalle: UIViewController {
         lblTitulo.text = item?.title
         lblDate.text = item?.pubDate
         btnCategoria.setTitle(item?.category, for: .normal)
-        print(item?.descripcion)
         lblDescription.text = item?.descripcion
+        print("EEEEEE \(item?.descripcion)")
+        
+        
+        
         
     }
     

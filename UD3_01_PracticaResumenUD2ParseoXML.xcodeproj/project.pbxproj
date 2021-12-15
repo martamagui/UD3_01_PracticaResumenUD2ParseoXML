@@ -16,6 +16,7 @@
 		D98251EE276A068F0052717F /* VCFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98251ED276A068F0052717F /* VCFeed.swift */; };
 		D98251F7276A08D00052717F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98251F6276A08D00052717F /* Item.swift */; };
 		D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9950276A49B000F1791B /* VCDetalle.swift */; };
+		D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9955276A5D5F00F1791B /* extensionFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D98251ED276A068F0052717F /* VCFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFeed.swift; sourceTree = "<group>"; };
 		D98251F6276A08D00052717F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D98A9950276A49B000F1791B /* VCDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetalle.swift; sourceTree = "<group>"; };
+		D98A9955276A5D5F00F1791B /* extensionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		D98251D72769F9E40052717F /* UD3_01_PracticaResumenUD2ParseoXML */ = {
 			isa = PBXGroup;
 			children = (
+				D98A9952276A5A4700F1791B /* extensions */,
 				D98251EF276A07DA0052717F /* model */,
 				D98251D82769F9E40052717F /* AppDelegate.swift */,
 				D98251DA2769F9E40052717F /* SceneDelegate.swift */,
@@ -82,6 +85,14 @@
 				D98251F6276A08D00052717F /* Item.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		D98A9952276A5A4700F1791B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D98A9955276A5D5F00F1791B /* extensionFile.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				D98251EE276A068F0052717F /* VCFeed.swift in Sources */,
 				D98251DD2769F9E40052717F /* ViewController.swift in Sources */,
 				D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */,
+				D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */,
 				D98251D92769F9E40052717F /* AppDelegate.swift in Sources */,
 				D98251F7276A08D00052717F /* Item.swift in Sources */,
 				D98251DB2769F9E40052717F /* SceneDelegate.swift in Sources */,

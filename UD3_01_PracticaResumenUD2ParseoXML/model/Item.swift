@@ -7,10 +7,12 @@
 
 import Foundation
 
+
 struct Item {
     var title: String
     var link: String
     var descripcion: String
     var category: String
     var pubDate: String
+    var img: String
 }

@@ -99,57 +99,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Noticia" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB5-KP-LSA">
-                                <rect key="frame" x="50" y="108" width="314" height="30"/>
+                                <rect key="frame" x="50" y="108" width="154" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-ia-nlk">
-                                <rect key="frame" x="50" y="188" width="314" height="21"/>
+                                <rect key="frame" x="50" y="208" width="154" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-6x-YZR">
-                                <rect key="frame" x="50" y="148" width="100" height="30"/>
+                                <rect key="frame" x="50" y="158" width="130" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="miv-UO-s9N"/>
+                                    <constraint firstAttribute="width" constant="130" id="uni-U5-Dyu"/>
                                 </constraints>
                                 <state key="normal" title="Categoría"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-d9-9XZ">
-                                <rect key="frame" x="50" y="259" width="314" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-VQ-IO7" userLabel="leerMas">
+                                <rect key="frame" x="50" y="399" width="154" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="OQ2-n9-MSj"/>
+                                    <constraint firstAttribute="width" constant="100" id="fMO-pX-X2I"/>
+                                </constraints>
+                                <state key="normal" title="Leer más"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-d9-9XZ">
+                                <rect key="frame" x="50" y="249" width="327" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="KIe-HK-k28"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-VQ-IO7" userLabel="leerMas">
-                                <rect key="frame" x="157" y="409" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="wY6-7O-rO0"/>
-                                </constraints>
-                                <state key="normal" title="Leer más"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b9n-vI-s9q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="1FK-SO-IYk"/>
-                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="jB5-KP-LSA" secondAttribute="trailing" constant="50" id="BzC-oN-yWR"/>
-                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="3GO-d9-9XZ" secondAttribute="trailing" constant="50" id="Cp2-eO-bhz"/>
-                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Lx5-ia-nlk" secondAttribute="trailing" constant="50" id="UIe-nx-EkR"/>
-                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="top" secondItem="fbY-6x-YZR" secondAttribute="bottom" constant="10" id="Vjp-wF-29w"/>
-                            <constraint firstItem="fbY-6x-YZR" firstAttribute="top" secondItem="jB5-KP-LSA" secondAttribute="bottom" constant="10" id="ado-Hf-v9P"/>
-                            <constraint firstItem="jB5-KP-LSA" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="arx-bH-SWP"/>
-                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="top" secondItem="Lx5-ia-nlk" secondAttribute="bottom" constant="50" id="dEd-Or-8IY"/>
-                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="eXh-0a-6uf"/>
-                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="top" secondItem="3GO-d9-9XZ" secondAttribute="bottom" constant="30" id="gpS-rC-Bcx"/>
-                            <constraint firstItem="fbY-6x-YZR" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="we3-jv-7nv"/>
-                            <constraint firstItem="jB5-KP-LSA" firstAttribute="top" secondItem="b9n-vI-s9q" secondAttribute="top" constant="20" id="xbO-8o-I36"/>
-                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="centerX" secondItem="b9n-vI-s9q" secondAttribute="centerX" id="zNG-mB-aba"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Ixq-VQ-IO7" secondAttribute="trailing" constant="50" id="82L-DN-JEU"/>
+                            <constraint firstItem="jB5-KP-LSA" firstAttribute="top" secondItem="b9n-vI-s9q" secondAttribute="top" constant="20" id="8Jd-JK-gru"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="3GO-d9-9XZ" secondAttribute="trailing" constant="50" id="C61-dn-wch"/>
+                            <constraint firstItem="fbY-6x-YZR" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="JlB-lc-ZPV"/>
+                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="Snm-SS-B4T"/>
+                            <constraint firstItem="Lx5-ia-nlk" firstAttribute="top" secondItem="fbY-6x-YZR" secondAttribute="bottom" constant="20" id="T2R-na-Hr9"/>
+                            <constraint firstItem="jB5-KP-LSA" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="Z8e-uA-Cuk"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Lx5-ia-nlk" secondAttribute="trailing" constant="50" id="dZ9-ca-781"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Ixq-VQ-IO7" secondAttribute="trailing" constant="50" id="fay-JZ-NJT"/>
+                            <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="jB5-KP-LSA" secondAttribute="trailing" constant="50" id="hN9-9N-3ZU"/>
+                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="top" secondItem="Lx5-ia-nlk" secondAttribute="bottom" constant="20" id="ivB-Vf-rhF"/>
+                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="top" secondItem="3GO-d9-9XZ" secondAttribute="bottom" constant="30" id="nuk-7M-LeN"/>
+                            <constraint firstItem="fbY-6x-YZR" firstAttribute="top" secondItem="jB5-KP-LSA" secondAttribute="bottom" constant="20" id="p5P-SJ-A7K"/>
+                            <constraint firstItem="3GO-d9-9XZ" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="ra7-kx-UNW"/>
+                            <constraint firstItem="Ixq-VQ-IO7" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="tpF-vc-zsR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YBE-FB-JLu"/>

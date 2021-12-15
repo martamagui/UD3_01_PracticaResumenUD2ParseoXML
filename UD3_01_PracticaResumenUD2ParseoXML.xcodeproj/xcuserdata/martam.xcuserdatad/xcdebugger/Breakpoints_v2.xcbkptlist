@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FB4A95A3-326D-4E92-A2B5-A4353084163F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "VCDetalle"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - e1da5c441d5e7ec4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.lblDescription.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - da380ea1caab06dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.lblDescription.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - 54f768fb65e30a0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.lblDescription.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - 154119dfcd676a26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.lblDescription.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - b21f087efb66b070"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; UD3_01_PracticaResumenUD2ParseoXML.VCDetalle"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "659B307C-E7FB-404A-887D-0140C4DBBB35 - 14631290494ed976"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UD3_01_PracticaResumenUD2ParseoXML.VCDetalle.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;UD3_01_PracticaResumenUD2ParseoXML.VCDetalle&gt;"
+                  moduleName = "UD3_01_PracticaResumenUD2ParseoXML"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/martam/Desktop/Proyectos%20clase/UD3_01_PracticaResumenUD2ParseoXML/UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

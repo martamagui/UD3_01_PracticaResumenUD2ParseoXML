@@ -71,9 +71,15 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item"
         {
-            print(descripcion)
-            let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate)
-            print(titulo)
+            let arrProvisional = descripcion.components(separatedBy: "\"/>\n    \n                        ")
+            
+            descripcion = "\(arrProvisional[1])"
+            let arrProvisiona2 = arrProvisional[0].components(separatedBy: "\"")
+            print(description)
+            img = arrProvisiona2[1]
+            print(img)
+            
+            let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate,img: img)
             itemList.append(datosItem)
         }
     }
