@@ -14,6 +14,7 @@ class VCDetalle: UIViewController {
     @IBOutlet weak var btnLeerMas: UIButton!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var ivNoticia: UIImageView!
+    
     var item : Item?
     
     override func viewDidLoad() {
@@ -25,11 +26,9 @@ class VCDetalle: UIViewController {
         lblDate.text = item?.pubDate
         btnCategoria.setTitle(item?.category, for: .normal)
         lblDescription.text = item?.descripcion
-        print("EEEEEE \(item?.descripcion)")
-        
-        
-        
-        
+        let imgUrl: URL = URL(string: item?.img ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png")!
+        ivNoticia.load(url: imgUrl)
+           
     }
     
 }

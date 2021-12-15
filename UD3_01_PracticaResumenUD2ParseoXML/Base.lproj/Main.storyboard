@@ -121,7 +121,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.moon.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-4Q-EfM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.moon.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-4Q-EfM">
                                 <rect key="frame" x="50" y="97.5" width="314.5" height="133"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="WLc-wZ-9MD"/>
@@ -162,6 +162,7 @@
                     <connections>
                         <outlet property="btnCategoria" destination="fbY-6x-YZR" id="bd2-LS-wQt"/>
                         <outlet property="btnLeerMas" destination="Ixq-VQ-IO7" id="W8J-J3-Zy1"/>
+                        <outlet property="ivNoticia" destination="nRZ-4Q-EfM" id="VPW-Ji-4bf"/>
                         <outlet property="lblDate" destination="Lx5-ia-nlk" id="9zp-6y-8VZ"/>
                         <outlet property="lblDescription" destination="3GO-d9-9XZ" id="7oW-OR-F0g"/>
                         <outlet property="lblTitulo" destination="jB5-KP-LSA" id="Idy-OL-ck1"/>
