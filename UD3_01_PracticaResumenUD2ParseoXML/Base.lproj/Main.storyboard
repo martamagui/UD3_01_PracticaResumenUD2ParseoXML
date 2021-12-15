@@ -62,7 +62,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="blp-Tp-Dsi"/>
                     <connections>
-                        <outlet property="miTabla" destination="Ntg-Km-0sb" id="ibU-wz-YJ8"/>
+                        <outlet property="miTabla" destination="Ntg-Km-0sb" id="Rtm-IO-cYo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OX9-Ex-zKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
