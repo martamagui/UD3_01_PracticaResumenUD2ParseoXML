@@ -72,7 +72,6 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
         if elementName == "item"
         {
             let arrProvisional = descripcion.components(separatedBy: "\"/>\n    \n                        ")
-            
             descripcion = "\(arrProvisional[1])"
             let arrProvisiona2 = arrProvisional[0].components(separatedBy: "\"")
             print(description)

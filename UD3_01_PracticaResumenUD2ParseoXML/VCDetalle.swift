@@ -28,7 +28,14 @@ class VCDetalle: UIViewController {
         lblDescription.text = item?.descripcion
         let imgUrl: URL = URL(string: item?.img ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png")!
         ivNoticia.load(url: imgUrl)
-           
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "irAWeb"
+        {
+            let vistaWeb = segue.destination as! VCWebView
+            print(link)
+            vistaWeb.contenidoWeb = item?.link ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png"
+        }
     }
     
 }

@@ -17,6 +17,7 @@
 		D98251F7276A08D00052717F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98251F6276A08D00052717F /* Item.swift */; };
 		D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9950276A49B000F1791B /* VCDetalle.swift */; };
 		D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9955276A5D5F00F1791B /* extensionFile.swift */; };
+		D98A9958276A6E3500F1791B /* VCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9957276A6E3500F1791B /* VCWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D98251F6276A08D00052717F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D98A9950276A49B000F1791B /* VCDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetalle.swift; sourceTree = "<group>"; };
 		D98A9955276A5D5F00F1791B /* extensionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionFile.swift; sourceTree = "<group>"; };
+		D98A9957276A6E3500F1791B /* VCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				D98251DA2769F9E40052717F /* SceneDelegate.swift */,
 				D98251DC2769F9E40052717F /* ViewController.swift */,
 				D98251DE2769F9E40052717F /* Main.storyboard */,
+				D98A9957276A6E3500F1791B /* VCWebView.swift */,
 				D98A9950276A49B000F1791B /* VCDetalle.swift */,
 				D98251ED276A068F0052717F /* VCFeed.swift */,
 				D98251E12769F9E40052717F /* Assets.xcassets */,
@@ -169,6 +172,7 @@
 				D98251DD2769F9E40052717F /* ViewController.swift in Sources */,
 				D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */,
 				D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */,
+				D98A9958276A6E3500F1791B /* VCWebView.swift in Sources */,
 				D98251D92769F9E40052717F /* AppDelegate.swift in Sources */,
 				D98251F7276A08D00052717F /* Item.swift in Sources */,
 				D98251DB2769F9E40052717F /* SceneDelegate.swift in Sources */,
