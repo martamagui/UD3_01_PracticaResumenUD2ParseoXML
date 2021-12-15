@@ -17,6 +17,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let tabBarController = UITabBarController()
+        if let windowScene = (scene as? UIWindowScene)
+        {
+            self.window = UIWindow(windowScene: windowScene)
+            //storyboard
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            
+            //instancias vistas y navigations
+            let vistasUser = sb.instantiateViewController(identifier: "vistasUser")
+            let vistaEliminar = sb.instantiateViewController(identifier: "bajaUsers")
+            let vistasCalculadora = sb.instantiateViewController(identifier: "vistasCalculadora")
+            //customizar imagenes
+            vistasUser.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "person.badge.plus"), selectedImage: nil)
+            vistaEliminar.tabBarItem = UITabBarItem(title: "Eliminar", image: UIImage(systemName: "person.badge.minus"), selectedImage: nil)
+            vistasCalculadora.tabBarItem = UITabBarItem(title: "Calculadora", image: UIImage(systemName: "function"), selectedImage: nil)
+            tabBarController.viewControllers =  [vistasUser, vistaEliminar, vistasCalculadora]
+            self.window?.rootViewController = tabBarController
+            self.window?.makeKeyAndVisible()
+
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
