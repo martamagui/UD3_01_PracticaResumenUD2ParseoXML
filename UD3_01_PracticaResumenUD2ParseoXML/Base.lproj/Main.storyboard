@@ -99,24 +99,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo Noticia" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB5-KP-LSA">
-                                <rect key="frame" x="50" y="248" width="314" height="30"/>
+                                <rect key="frame" x="50" y="268" width="314" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbY-6x-YZR">
-                                <rect key="frame" x="50" y="293" width="314" height="30"/>
+                                <rect key="frame" x="50" y="313" width="314" height="30"/>
                                 <state key="normal" title="Categoría"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-VQ-IO7" userLabel="leerMas">
-                                <rect key="frame" x="50" y="539" width="314" height="30"/>
+                                <rect key="frame" x="50" y="559" width="314" height="30"/>
                                 <state key="normal" title="Leer más"/>
                                 <connections>
                                     <segue destination="lMr-ho-tF3" kind="show" identifier="irAWeb" id="CTg-tY-TY7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-d9-9XZ">
-                                <rect key="frame" x="50" y="389" width="314" height="120"/>
+                                <rect key="frame" x="50" y="409" width="314" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="tNj-r6-aPO"/>
                                 </constraints>
@@ -125,13 +125,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.moon.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nRZ-4Q-EfM">
-                                <rect key="frame" x="50" y="97.5" width="314.5" height="133"/>
+                                <rect key="frame" x="50" y="117.5" width="314.5" height="133"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="WLc-wZ-9MD"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx5-ia-nlk">
-                                <rect key="frame" x="50" y="338" width="314" height="21"/>
+                                <rect key="frame" x="50" y="358" width="314" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -155,10 +155,10 @@
                             <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Lx5-ia-nlk" secondAttribute="trailing" constant="50" id="W8g-Mv-lws"/>
                             <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="3GO-d9-9XZ" secondAttribute="trailing" constant="50" id="Wla-OO-nmb"/>
                             <constraint firstItem="Lx5-ia-nlk" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="biK-Yn-0d3"/>
-                            <constraint firstItem="nRZ-4Q-EfM" firstAttribute="top" secondItem="b9n-vI-s9q" secondAttribute="top" constant="10" id="c5z-Uq-HEH"/>
                             <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="jB5-KP-LSA" secondAttribute="trailing" constant="50" id="dWA-Zm-zX0"/>
                             <constraint firstItem="b9n-vI-s9q" firstAttribute="trailing" secondItem="Ixq-VQ-IO7" secondAttribute="trailing" constant="50" id="my6-LG-LxR"/>
                             <constraint firstItem="3GO-d9-9XZ" firstAttribute="leading" secondItem="b9n-vI-s9q" secondAttribute="leading" constant="50" id="sB4-lp-NBh"/>
+                            <constraint firstItem="nRZ-4Q-EfM" firstAttribute="top" secondItem="b9n-vI-s9q" secondAttribute="top" constant="30" id="ueB-09-EO7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YBE-FB-JLu"/>
