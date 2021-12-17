@@ -20,6 +20,7 @@
 		D98A9958276A6E3500F1791B /* VCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9957276A6E3500F1791B /* VCWebView.swift */; };
 		D9919A3A276CF39500449E71 /* TVCTopNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9919A39276CF39500449E71 /* TVCTopNews.swift */; };
 		D9919A3C276CF3C500449E71 /* TableViewCellNoticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9919A3B276CF3C500449E71 /* TableViewCellNoticia.swift */; };
+		D9919A42276D0CA800449E71 /* VCDetalle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9919A41276D0CA800449E71 /* VCDetalle2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D98A9957276A6E3500F1791B /* VCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWebView.swift; sourceTree = "<group>"; };
 		D9919A39276CF39500449E71 /* TVCTopNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCTopNews.swift; sourceTree = "<group>"; };
 		D9919A3B276CF3C500449E71 /* TableViewCellNoticia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNoticia.swift; sourceTree = "<group>"; };
+		D9919A41276D0CA800449E71 /* VCDetalle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetalle2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				D98251DE2769F9E40052717F /* Main.storyboard */,
 				D98A9957276A6E3500F1791B /* VCWebView.swift */,
 				D98A9950276A49B000F1791B /* VCDetalle.swift */,
+				D9919A41276D0CA800449E71 /* VCDetalle2.swift */,
 				D98251ED276A068F0052717F /* VCFeed.swift */,
 				D98251E12769F9E40052717F /* Assets.xcassets */,
 				D98251E32769F9E40052717F /* LaunchScreen.storyboard */,
@@ -184,6 +187,7 @@
 				D9919A3C276CF3C500449E71 /* TableViewCellNoticia.swift in Sources */,
 				D98251F7276A08D00052717F /* Item.swift in Sources */,
 				D98251DB2769F9E40052717F /* SceneDelegate.swift in Sources */,
+				D9919A42276D0CA800449E71 /* VCDetalle2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

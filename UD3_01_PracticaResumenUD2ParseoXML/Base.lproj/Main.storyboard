@@ -242,10 +242,26 @@
             </objects>
             <point key="canvasLocation" x="3354" y="-228"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E3R-nD-g6T">
+            <objects>
+                <navigationController storyboardIdentifier="Top" id="qYO-Lx-uql" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yae-Su-1q7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KwI-h1-qtu" kind="relationship" relationship="rootViewController" id="Z8R-JV-W5v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcF-uw-gdQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="463"/>
+        </scene>
         <!--Top News-->
         <scene sceneID="Vrn-tb-D9Q">
             <objects>
-                <tableViewController storyboardIdentifier="Top" id="KwI-h1-qtu" customClass="TVCTopNews" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KwI-h1-qtu" customClass="TVCTopNews" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="430" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BQ9-Mo-OF0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,6 +312,7 @@
                                     <outlet property="descripcionNoticia" destination="AUL-cb-lJX" id="WE7-p7-QhY"/>
                                     <outlet property="imagenNoticia" destination="CbX-cU-MYX" id="RZw-vl-BIm"/>
                                     <outlet property="tituloNoticia" destination="Qcs-xu-5ct" id="nBy-MU-nZ0"/>
+                                    <segue destination="I3i-CC-yZW" kind="show" identifier="irADetalle2" id="gaY-PM-cDf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -311,7 +328,48 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8M-jc-o6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840.57971014492762" y="462.72321428571428"/>
+            <point key="canvasLocation" x="793" y="463"/>
+        </scene>
+        <!--Detalle2-->
+        <scene sceneID="0n5-yU-rkp">
+            <objects>
+                <viewController id="I3i-CC-yZW" customClass="VCDetalle2" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96E-yy-G9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-EP-nJz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-Ru-JS0">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mnW-IK-dZ9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mnW-IK-dZ9" firstAttribute="bottom" secondItem="3PG-EP-nJz" secondAttribute="bottom" id="8cl-bE-CKb"/>
+                            <constraint firstItem="mnW-IK-dZ9" firstAttribute="trailing" secondItem="3PG-EP-nJz" secondAttribute="trailing" id="OWl-Va-ZYc"/>
+                            <constraint firstItem="3PG-EP-nJz" firstAttribute="leading" secondItem="mnW-IK-dZ9" secondAttribute="leading" id="OxL-Iq-DLY"/>
+                            <constraint firstItem="3PG-EP-nJz" firstAttribute="top" secondItem="mnW-IK-dZ9" secondAttribute="top" id="bUo-X1-zv0"/>
+                            <constraint firstItem="LcC-Ru-JS0" firstAttribute="centerX" secondItem="96E-yy-G9k" secondAttribute="centerX" id="kNG-9a-zOW"/>
+                            <constraint firstItem="LcC-Ru-JS0" firstAttribute="centerY" secondItem="96E-yy-G9k" secondAttribute="centerY" id="mBC-Yq-fxG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="I1x-bD-NzV"/>
+                    <connections>
+                        <outlet property="loadAnim" destination="LcC-Ru-JS0" id="Qhe-xN-wcG"/>
+                        <outlet property="webview" destination="3PG-EP-nJz" id="EmP-o5-PW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEG-j8-FPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="463"/>
         </scene>
     </scenes>
     <resources>

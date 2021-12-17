@@ -54,12 +54,8 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
         return celda
     }
 
-    
-    
-    
+ 
     //Parseo de categorías
-   
-    
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         nombreElemento = elementName
         if nombreElemento == "item"
@@ -95,7 +91,7 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if (elementName == "item" && itemList.count<10)
         {
-                annadirElemento()
+            annadirElemento()
         }
     }
     
@@ -110,6 +106,17 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
         let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate,img: img)
         itemList.append(datosItem)
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "irADetalle2", sender: nil)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "irADetalle2"
+        {
+            guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
+            let itemSeleccionado = itemList[celdaSeleccionada]
+            let vistaDetalle = segue.destination as! VCDetalle2
+            vistaDetalle.contenidoWeb = itemList[celdaSeleccionada].link
+        }
+    }
 
 }
