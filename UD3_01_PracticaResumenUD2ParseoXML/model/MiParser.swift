@@ -1,17 +1,14 @@
 //
-//  VCFeed.swift
+//  MiParser.swift
 //  UD3_01_PracticaResumenUD2ParseoXML
 //
-//  Created by Marta Molina Aguilera on 15/12/21.
+//  Created by Marta Molina Aguilera on 17/12/21.
 //
 
 import UIKit
 
-class VCFeed:  UITableViewController, XMLParserDelegate {
-   
-    @IBOutlet var miTabla: UITableView!
+class MiParser: NSObject, XMLParserDelegate {
     
-    var tematica = String()
     var itemList = [Item]()
     var titulo = String()
     var link = String()
@@ -21,18 +18,13 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
     var pubDate =  String()
     var img = String()
     var parser: XMLParser = XMLParser()
+    
     let urlXML="https://www.muyinteresante.es/rss"
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    func iniciarParseo(){
         guard let url = URL(string: urlXML) else {return}
         guard let parser = XMLParser(contentsOf: url) else { return}
         parser.delegate = self
         parser.parse()
-        
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -81,35 +73,4 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
             itemList.append(datosItem)
         }
     }
-   
-    
-    // MARK: - Table view data source
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemList.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Configure the cell...
-        let cell =  UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
-        cell.textLabel?.text = itemList[indexPath.row].title
-        return cell
-    }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "irADetalle", sender: nil)
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "irADetalle"
-        {
-            guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
-            let itemSeleccionado = itemList[celdaSeleccionada]
-            let vistaDetalle = segue.destination as! VCDetalle
-            print(link)
-            vistaDetalle.item = itemSeleccionado
-        }
-    }
-    
 }

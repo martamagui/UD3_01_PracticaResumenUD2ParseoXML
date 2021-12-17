@@ -32,10 +32,10 @@ class VCWebView: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         loadAnim.startAnimating()
     }
+    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadAnim.stopAnimating()
         loadAnim.hidesWhenStopped = true
-        //TODO la animación no para
     }
     
 }

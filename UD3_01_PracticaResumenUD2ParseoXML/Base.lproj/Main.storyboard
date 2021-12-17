@@ -16,22 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOY-iy-KEU">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKn-40-25a">
+                                <rect key="frame" x="50" y="340" width="314" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="NAY-Rv-nxe"/>
+                                </constraints>
                                 <connections>
-                                    <segue destination="ClX-z3-oou" kind="show" id="gB3-Lc-zhA"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bB1-7c-k7v"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mvb-Dm-dJd"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleeciona la temática:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqE-Um-m9e">
+                                <rect key="frame" x="106.5" y="266" width="201" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0d-ZM-uFP">
+                                <rect key="frame" x="187.5" y="586" width="39" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Leer"/>
+                                <connections>
+                                    <segue destination="ClX-z3-oou" kind="show" id="e0R-GJ-K1i"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QOY-iy-KEU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHw-eK-DfE"/>
-                            <constraint firstItem="QOY-iy-KEU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VMf-7w-Xq6"/>
+                            <constraint firstItem="i0d-ZM-uFP" firstAttribute="top" secondItem="EKn-40-25a" secondAttribute="bottom" constant="30" id="4eI-Y5-ilZ"/>
+                            <constraint firstItem="EKn-40-25a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6cU-wt-IyQ"/>
+                            <constraint firstItem="WqE-Um-m9e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ezp-A4-crw"/>
+                            <constraint firstItem="i0d-ZM-uFP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kcs-bo-reP"/>
+                            <constraint firstItem="EKn-40-25a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UEp-bG-bQD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EKn-40-25a" secondAttribute="trailing" constant="50" id="XNt-Yn-4Ql"/>
+                            <constraint firstItem="EKn-40-25a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k8D-QT-3TI"/>
+                            <constraint firstItem="EKn-40-25a" firstAttribute="top" secondItem="WqE-Um-m9e" secondAttribute="bottom" constant="50" id="uhU-Ls-Ow4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rvk-26-heA"/>
+                    <connections>
+                        <outlet property="pickerTema" destination="EKn-40-25a" id="ANE-4X-OUv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NJ-97-XcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2016" y="-901"/>
+            <point key="canvasLocation" x="761" y="445"/>
         </scene>
     </scenes>
     <resources>
