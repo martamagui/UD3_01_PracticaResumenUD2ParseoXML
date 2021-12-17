@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Leer"/>
                                 <connections>
-                                    <segue destination="ClX-z3-oou" kind="show" id="e0R-GJ-K1i"/>
+                                    <segue destination="ClX-z3-oou" kind="show" identifier="aFeed" id="e0R-GJ-K1i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -242,20 +242,33 @@
             </objects>
             <point key="canvasLocation" x="3354" y="-228"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="MhL-xF-2mV">
+        <!--Table View Controller-->
+        <scene sceneID="Vrn-tb-D9Q">
             <objects>
-                <viewController id="Kga-UZ-1uT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i6K-Mv-0ZY">
+                <tableViewController id="KwI-h1-qtu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BQ9-Mo-OF0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="TSR-t9-KqE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8NJ-97-XcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cmO-a0-yac">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cmO-a0-yac" id="p7p-3r-8yQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KwI-h1-qtu" id="6aR-fv-y1X"/>
+                            <outlet property="delegate" destination="KwI-h1-qtu" id="jLY-j7-EdD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8M-jc-o6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="445"/>
+            <point key="canvasLocation" x="842" y="463"/>
         </scene>
     </scenes>
     <resources>

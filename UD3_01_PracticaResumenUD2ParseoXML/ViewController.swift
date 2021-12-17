@@ -35,7 +35,7 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         return temas[row]
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "aCalculadora2" {
+        if segue.identifier == "aFeed" {
             let controlador =  segue.destination as! VCFeed
             controlador.tematica = tematica
         }
@@ -54,7 +54,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         if nombreElemento == "item"
         {
             category = String()
-            
         }
     }
     

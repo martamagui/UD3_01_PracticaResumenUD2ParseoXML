@@ -68,20 +68,27 @@ class VCFeed:  UITableViewController, XMLParserDelegate {
     }
    // Cuando termina el elemento
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "item"
+        if (elementName == "item")
         {
-            let arrProvisional = descripcion.components(separatedBy: "\"/>\n    \n                        ")
-            descripcion = "\(arrProvisional[1])"
-            let arrProvisiona2 = arrProvisional[0].components(separatedBy: "\"")
-            print(description)
-            img = arrProvisiona2[1]
-            print(img)
-            
-            let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate,img: img)
-            itemList.append(datosItem)
+            if tematica == "Todas"{
+                annadirElemento()
+            }else if tematica == category{
+                annadirElemento()
+            }
         }
     }
-   
+    
+    func annadirElemento(){
+        let arrProvisional = descripcion.components(separatedBy: "\"/>\n    \n                        ")
+        descripcion = "\(arrProvisional[1])"
+        let arrProvisiona2 = arrProvisional[0].components(separatedBy: "\"")
+        print(description)
+        img = arrProvisiona2[1]
+        print(img)
+        
+        let datosItem = Item(title: titulo, link: link, descripcion: descripcion, category: category, pubDate: pubDate,img: img)
+        itemList.append(datosItem)
+    }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
