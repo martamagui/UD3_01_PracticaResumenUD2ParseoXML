@@ -18,6 +18,8 @@
 		D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9950276A49B000F1791B /* VCDetalle.swift */; };
 		D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9955276A5D5F00F1791B /* extensionFile.swift */; };
 		D98A9958276A6E3500F1791B /* VCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9957276A6E3500F1791B /* VCWebView.swift */; };
+		D9919A3A276CF39500449E71 /* TVCTopNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9919A39276CF39500449E71 /* TVCTopNews.swift */; };
+		D9919A3C276CF3C500449E71 /* TableViewCellNoticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9919A3B276CF3C500449E71 /* TableViewCellNoticia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D98A9950276A49B000F1791B /* VCDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetalle.swift; sourceTree = "<group>"; };
 		D98A9955276A5D5F00F1791B /* extensionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionFile.swift; sourceTree = "<group>"; };
 		D98A9957276A6E3500F1791B /* VCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCWebView.swift; sourceTree = "<group>"; };
+		D9919A39276CF39500449E71 /* TVCTopNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCTopNews.swift; sourceTree = "<group>"; };
+		D9919A3B276CF3C500449E71 /* TableViewCellNoticia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNoticia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				D98251E12769F9E40052717F /* Assets.xcassets */,
 				D98251E32769F9E40052717F /* LaunchScreen.storyboard */,
 				D98251E62769F9E40052717F /* Info.plist */,
+				D9919A39276CF39500449E71 /* TVCTopNews.swift */,
+				D9919A3B276CF3C500449E71 /* TableViewCellNoticia.swift */,
 			);
 			path = UD3_01_PracticaResumenUD2ParseoXML;
 			sourceTree = "<group>";
@@ -171,9 +177,11 @@
 				D98251EE276A068F0052717F /* VCFeed.swift in Sources */,
 				D98251DD2769F9E40052717F /* ViewController.swift in Sources */,
 				D98A9951276A49B000F1791B /* VCDetalle.swift in Sources */,
+				D9919A3A276CF39500449E71 /* TVCTopNews.swift in Sources */,
 				D98A9956276A5D5F00F1791B /* extensionFile.swift in Sources */,
 				D98A9958276A6E3500F1791B /* VCWebView.swift in Sources */,
 				D98251D92769F9E40052717F /* AppDelegate.swift in Sources */,
+				D9919A3C276CF3C500449E71 /* TableViewCellNoticia.swift in Sources */,
 				D98251F7276A08D00052717F /* Item.swift in Sources */,
 				D98251DB2769F9E40052717F /* SceneDelegate.swift in Sources */,
 			);

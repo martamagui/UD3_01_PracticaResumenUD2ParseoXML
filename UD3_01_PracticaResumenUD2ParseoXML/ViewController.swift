@@ -70,7 +70,6 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "item"
         {
-            print(category)
             if (!temas.contains(category))
             {
                 temas.append(category)
