@@ -13,12 +13,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        /*let tabBarController = UITabBarController()
+        let tabBarController = UITabBarController()
         if let windowScene = (scene as? UIWindowScene)
         {
             self.window = UIWindow(windowScene: windowScene)
@@ -26,18 +23,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let sb = UIStoryboard(name: "Main", bundle: nil)
             
             //instancias vistas y navigations
-            let vistasUser = sb.instantiateViewController(identifier: "vistasUser")
-            let vistaEliminar = sb.instantiateViewController(identifier: "bajaUsers")
-            let vistasCalculadora = sb.instantiateViewController(identifier: "vistasCalculadora")
+            let vNoticias = sb.instantiateViewController(identifier: "Noticias")
+            let vTop = sb.instantiateViewController(identifier: "Top")
+            
             //customizar imagenes
-            vistasUser.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "person.badge.plus"), selectedImage: nil)
-            vistaEliminar.tabBarItem = UITabBarItem(title: "Eliminar", image: UIImage(systemName: "person.badge.minus"), selectedImage: nil)
-            vistasCalculadora.tabBarItem = UITabBarItem(title: "Calculadora", image: UIImage(systemName: "function"), selectedImage: nil)
-            tabBarController.viewControllers =  [vistasUser, vistaEliminar, vistasCalculadora]
+            vTop.tabBarItem = UITabBarItem(title: "Tu resumen", image: UIImage(systemName: "newspaper"), selectedImage: nil)
+            vNoticias.tabBarItem = UITabBarItem(title: "Noticias", image: UIImage(systemName: "person.badge.minus"), selectedImage: nil)
+    
+            tabBarController.viewControllers =  [vTop,vNoticias]
             self.window?.rootViewController = tabBarController
             self.window?.makeKeyAndVisible()
-
-        }*/
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

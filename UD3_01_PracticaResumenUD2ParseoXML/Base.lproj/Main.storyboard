@@ -40,14 +40,6 @@
                                     <segue destination="ClX-z3-oou" kind="show" identifier="aFeed" id="e0R-GJ-K1i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCu-kh-2KG">
-                                <rect key="frame" x="180" y="682" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="KwI-h1-qtu" kind="show" id="HWO-CJ-bcb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -109,7 +101,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yee-zg-s8a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTm-qg-QSu" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Noticias" automaticallyAdjustsScrollViewInsets="NO" id="tTm-qg-QSu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aer-la-KEx">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -253,8 +245,8 @@
         <!--Top News-->
         <scene sceneID="Vrn-tb-D9Q">
             <objects>
-                <tableViewController id="KwI-h1-qtu" customClass="TVCTopNews" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BQ9-Mo-OF0">
+                <tableViewController storyboardIdentifier="Top" id="KwI-h1-qtu" customClass="TVCTopNews" customModule="UD3_01_PracticaResumenUD2ParseoXML" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="430" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BQ9-Mo-OF0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,8 +258,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="427"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.bolt.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-cU-MYX">
-                                            <rect key="frame" x="20" y="11.5" width="374" height="202"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CbX-cU-MYX">
+                                            <rect key="frame" x="20" y="11" width="374" height="200"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="200" id="PFy-Z6-0ks"/>
                                             </constraints>
@@ -323,8 +315,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cloud.bolt.rain.fill" catalog="system" width="128" height="128"/>
         <image name="cloud.moon.rain.fill" catalog="system" width="128" height="125"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

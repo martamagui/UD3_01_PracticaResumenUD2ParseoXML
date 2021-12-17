@@ -47,12 +47,10 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
         let celda = miTabla.dequeueReusableCell(withIdentifier: "Celda") as! TableViewCellNoticia
-        //cell.textLabel?.text = itemList[indexPath.row].title
-        //let urlImg = URL(string: itemList[indexPath.row].link ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png")!
-        
-        //celda.imagenNoticia.load(url: urlImg )
         celda.descripcionNoticia.text = itemList[indexPath.row].descripcion
         celda.tituloNoticia.text = itemList[indexPath.row].title
+        let urlImg = URL(string: itemList[indexPath.row].img ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png")!
+        celda.imagenNoticia.load(url: urlImg)
         return celda
     }
 
@@ -95,7 +93,7 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     }
    // Cuando termina el elemento
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if (elementName == "item")
+        if (elementName == "item" && itemList.count<10)
         {
                 annadirElemento()
         }

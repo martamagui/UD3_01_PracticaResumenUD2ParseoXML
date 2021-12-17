@@ -40,6 +40,9 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
             controlador.tematica = tematica
         }
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 430
+    }
     
     //Parseo de categorías
     //Preparo el parseo y le asigno el URL
