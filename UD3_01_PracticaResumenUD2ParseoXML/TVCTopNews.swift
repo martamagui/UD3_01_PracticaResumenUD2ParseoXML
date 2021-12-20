@@ -22,6 +22,8 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     var parser: XMLParser = XMLParser()
     let urlXML="https://www.muyinteresante.es/rss"
     
+    var item : Item?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Ejecuta todo lo que tiene que ver con el parseo.
@@ -126,6 +128,7 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     }
     //Segue ejecutada al pulsar sobre un elemento de la lista.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        item =  itemList[indexPath.row]
         performSegue(withIdentifier: "irADetalle2", sender: nil)
     }
     
@@ -135,10 +138,9 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "irADetalle2"
         {
-            guard let celdaSeleccionada = miTabla.indexPathForSelectedRow?.row else {return}
-            let itemSeleccionado = itemList[celdaSeleccionada]
+          
             let vistaDetalle = segue.destination as! VCDetalle2
-            vistaDetalle.contenidoWeb = itemList[celdaSeleccionada].link
+            vistaDetalle.contenidoWeb = item?.link ?? "https://user-images.githubusercontent.com/582516/98960633-6c6a1600-24e3-11eb-89f1-045f55a1e494.png"
         }
     }
 
