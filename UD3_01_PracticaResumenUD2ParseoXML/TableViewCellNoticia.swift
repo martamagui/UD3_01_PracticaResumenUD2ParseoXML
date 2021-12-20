@@ -17,10 +17,21 @@ class TableViewCellNoticia: UITableViewCell {
      */
     override func awakeFromNib() {
         super.awakeFromNib()
+        degradado()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    func degradado(){
+        let gradient = CAGradientLayer()
+        gradient.frame = imagenNoticia.bounds
+        let startColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0).cgColor
+        let colorMedio = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3).cgColor
+        let colorMedio2 = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.7).cgColor
+        let endColor = UIColor(ciColor: .white).cgColor
+        gradient.colors = [startColor, colorMedio,colorMedio2,endColor]
+        imagenNoticia.layer.insertSublayer(gradient, at: 0)
     }
 
 }
