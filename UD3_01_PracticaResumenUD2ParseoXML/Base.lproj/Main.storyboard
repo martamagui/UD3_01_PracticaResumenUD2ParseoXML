@@ -280,7 +280,7 @@
                                                 <constraint firstAttribute="height" constant="200" id="PFy-Z6-0ks"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-xu-5ct">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-xu-5ct">
                                             <rect key="frame" x="20" y="236" width="374" height="27.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                             <nil key="textColor"/>
@@ -300,12 +300,14 @@
                                         <constraint firstItem="AUL-cb-lJX" firstAttribute="leading" secondItem="p7p-3r-8yQ" secondAttribute="leadingMargin" id="4cP-oM-th5"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="AUL-cb-lJX" secondAttribute="trailing" id="ALr-sX-daH"/>
                                         <constraint firstItem="Qcs-xu-5ct" firstAttribute="top" secondItem="CbX-cU-MYX" secondAttribute="bottom" constant="25" id="Fv5-55-woD"/>
+                                        <constraint firstItem="Qcs-xu-5ct" firstAttribute="trailing" secondItem="p7p-3r-8yQ" secondAttribute="trailingMargin" id="JDV-br-54m"/>
                                         <constraint firstItem="AUL-cb-lJX" firstAttribute="top" secondItem="Qcs-xu-5ct" secondAttribute="bottom" constant="30" id="KyP-oT-MzG"/>
                                         <constraint firstItem="CbX-cU-MYX" firstAttribute="leading" secondItem="p7p-3r-8yQ" secondAttribute="leadingMargin" id="T2V-aJ-PRd"/>
                                         <constraint firstItem="Qcs-xu-5ct" firstAttribute="leading" secondItem="p7p-3r-8yQ" secondAttribute="leadingMargin" id="VaP-sg-8NO"/>
                                         <constraint firstItem="CbX-cU-MYX" firstAttribute="top" secondItem="p7p-3r-8yQ" secondAttribute="topMargin" id="XJX-CW-yiR"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="CbX-cU-MYX" secondAttribute="trailing" id="l1p-YY-MgQ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Qcs-xu-5ct" secondAttribute="trailing" id="oYr-R8-3uT"/>
+                                        <constraint firstItem="Qcs-xu-5ct" firstAttribute="leading" secondItem="p7p-3r-8yQ" secondAttribute="leadingMargin" id="pLL-OY-R34"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

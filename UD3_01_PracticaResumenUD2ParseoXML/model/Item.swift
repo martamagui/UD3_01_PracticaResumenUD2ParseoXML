@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//Estructura a la que es parseada la información del XML
 struct Item {
     var title: String
     var link: String

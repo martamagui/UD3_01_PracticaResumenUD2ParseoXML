@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//Carga mediante una función asíncrona  carga la imágen proporcionada por el Url en los parámetros.
 extension UIImageView {
     func load(url: URL) {
         DispatchQueue.global().async { [weak self] in

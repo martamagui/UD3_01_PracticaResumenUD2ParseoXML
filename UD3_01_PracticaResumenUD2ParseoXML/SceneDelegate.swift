@@ -22,14 +22,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //storyboard
             let sb = UIStoryboard(name: "Main", bundle: nil)
             
-            //instancias vistas y navigations
+            //Instancias de ambos Navigations
             let vNoticias = sb.instantiateViewController(identifier: "Noticias")
             let vTop = sb.instantiateViewController(identifier: "Top")
             
-            //customizar imagenes
+            //Asigno los iconos de periódico al TabBar
             vTop.tabBarItem = UITabBarItem(title: "Tu resumen", image: UIImage(systemName: "newspaper"), selectedImage: nil)
             vNoticias.tabBarItem = UITabBarItem(title: "Noticias", image: UIImage(systemName: "person.badge.minus"), selectedImage: nil)
-    
+            
+            /*Añado ambos Navigation controlers al menú inferior una vez les he asignado los iconos.
+             Establezco como controlador raíz de las vistas el tabBar. Lo hago visible.*/
             tabBarController.viewControllers =  [vTop,vNoticias]
             self.window?.rootViewController = tabBarController
             self.window?.makeKeyAndVisible()

@@ -122,10 +122,10 @@
             filePath = "UD3_01_PracticaResumenUD2ParseoXML/VCDetalle.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "configurarUI()"
-            landmarkType = "7">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "VCDetalle"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
