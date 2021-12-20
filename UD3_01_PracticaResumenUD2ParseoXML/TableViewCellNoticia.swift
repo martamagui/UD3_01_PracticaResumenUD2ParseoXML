@@ -12,16 +12,15 @@ class TableViewCellNoticia: UITableViewCell {
     @IBOutlet weak var tituloNoticia: UILabel!
     @IBOutlet weak var descripcionNoticia: UILabel!
     
+    /*
+     Inicializa la celda de la vista de "resumen" y declara sus elementos para poner acceder a ellos al crear la tabla.
+     */
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
