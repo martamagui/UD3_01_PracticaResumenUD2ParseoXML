@@ -129,7 +129,6 @@ class TVCTopNews: UITableViewController,XMLParserDelegate {
     //Segue ejecutada al pulsar sobre un elemento de la lista.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         item =  itemList[indexPath.row]
-        performSegue(withIdentifier: "irADetalle2", sender: nil)
     }
     
     /*Al pulsar sobre una de las celdas toma el elemento seleccionado
